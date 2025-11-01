@@ -18,8 +18,6 @@ $result = new Collection([1, 2, 3])->map(fn($x) => $x * 2)->get();	// Los parén
 ```
 ### Code
 
-### Prueba Rápida
-
 ```php
 <?php // PHP 8.4+
 // Clase anónima utilizada como un 'builder'
