@@ -20,7 +20,7 @@ $result = new Collection([1, 2, 3])->map(fn($x) => $x * 2)->get();	// Los parén
 
 ```php
 <?php // PHP 8.4+
-// Clase anónima utilizada como un 'builder'
+
 $message = new class('World') {
     private string $name;
 
@@ -31,13 +31,13 @@ $message = new class('World') {
     public function greet(): string {
         return "Hello, " . $this->name . "!";
     }
-}->greet(); // Acceso al método sin los paréntesis de la instanciación
+}->greet();
 
 echo $message . "\n";
 assert($message === 'Hello, World!');
 
 // Salida Esperada:
-// Hello, World!
+// Hola, Mundo!
 ?>
 
 ```
